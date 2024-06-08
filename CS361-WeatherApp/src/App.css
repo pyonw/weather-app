@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the app */
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Form styles */
+.form {
+  margin-bottom: 20px;
+}
+
+/* City input field */
+.city-input {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #4e54c8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  margin-bottom: 20px; /* Add spacing between inputs */
+  width: calc(100% - 40px);
+  color: #333;
+  font-size: 18px; /* Increased font size */
+  transition: border-bottom-color 0.3s ease;
+  text-align: center; /* Center text horizontally */
+}
+
+.city-input:focus {
+  border-bottom-color: #8f94fb;
+}
+
+/* State input field */
+.state-input {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #4e54c8;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  margin-bottom: 20px; /* Add spacing between inputs */
+  width: calc(100% - 40px);
+  color: #333;
+  font-size: 18px; /* Increased font size */
+  transition: border-bottom-color 0.3s ease;
+  text-align: center; /* Center text horizontally */
+}
+
+.state-input:focus {
+  border-bottom-color: #8f94fb;
+}
+
+/* Button styles */
+.button {
+  padding: 12px 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px; /* Increased font size */
+  width: calc(100% - 40px);
+}
+
+.button:hover {
+  background-color: #8f94fb;
+}
+
+/* Weather info container */
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Header styles */
+.weather-info h2 {
+  margin: 0;
+  color: #4e54c8;
+}
+
+/* Text styles */
+.weather-info p {
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Error message styles */
+.error {
+  color: #ff6b6b;
+}

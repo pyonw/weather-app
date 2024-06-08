@@ -1,0 +1,51 @@
+/* Weather.css */
+
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  .temperature {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+
+  .weather-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+  }
+  .input-container {
+    position: relative;
+  }
+  
+  .city-input {
+    padding-right: 30px; /* Adjust padding to leave space for the clear button */
+  }
+  
+  .clear-button {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Adjust right positioning as needed */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black; /* Change font color to black */
+    font-weight: bold; /* Make the X button bold */
+  }

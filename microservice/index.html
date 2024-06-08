@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microservice Demo</title>
+</head>
+<body>
+  <button id="fetchDataButton">Fetch Random Item</button>
+
+  <script>
+    document.getElementById('fetchDataButton').addEventListener('click', async () => {
+  try {
+    // Frontend sends a request to the backend
+    const response = await fetch('http://localhost:3000/api/getRandomItem');
+    const data = await response.json();
+
+    // Frontend updates UI with the received data
+    console.log('Received data from backend:', data);
+    alert(`Received random number: ${data.randomNumber}`);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
+  </script>
+</body>
+</html>

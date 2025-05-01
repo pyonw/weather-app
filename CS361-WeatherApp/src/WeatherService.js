@@ -28,3 +28,5 @@ export const fetchRandomWeather = async () => {
     throw error;
   }
 };
+
+// test
